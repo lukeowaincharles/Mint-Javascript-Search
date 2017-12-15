@@ -1,23 +1,88 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>Image live search</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/css/search.css">
 
     </head>
     <body>
-        <div>
-            <div class="container">
-                <input class="search__input" type="text" placeholder="Search">
+        <header class="page__header">
+            <h1>Image Search</h1>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="search__input__wrapper" id="keywords" >
+                        <input class="search__input typeahead" id="photo-search" type="text" placeholder="Start typing...">
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div id="gallery__container">
+
+                        <div class="gallery__img__wrapper">
+                            <img src="/img/beach.jpg" data-tags="Beach, Sea" alt="Beach Sea Sand" />
+                        </div>
+
+                        <div class="gallery__img__wrapper">
+                            <img src="/img/coffee.jpg" data-tags="Coffee" alt="Coffee" />
+                        </div>
+
+                        <div class="gallery__img__wrapper">
+                            <img src="/img/fantasy.jpg" data-tags="Fantasy" alt="Fantasy Book Girl" />
+                        </div>
+
+                        <div class="gallery__img__wrapper">
+                            <img src="/img/guitarist.jpg" data-tags="Guitarist" alt="Guitarist Amps Guitar" />
+                        </div>
+
+                        <div class="gallery__img__wrapper">
+                            <img src="/img/moose.jpg" data-tags="Moose" alt="Moose Elk Canada" />
+                        </div>
+
+                        <div class="gallery__img__wrapper">
+                            <img src="/img/neon-sign.jpg" data-tags="Neon" alt="Neon Sign" />
+                        </div>
+
+                        <div class="gallery__img__wrapper">
+                            <img src="/img/pancake-stack.jpg" data-tags="Pancake" alt="Pancake Stack Syrup Blueberries" />
+                        </div>
+
+                        <div class="gallery__img__wrapper">
+                            <img src="/img/puffin.jpg" data-tags="Puffin" alt="Puffin Bird" />
+                        </div>
+
+                        <div class="gallery__img__wrapper">
+                            <img src="/img/road-from-above.jpg" data-tags="Road" alt="Road Trees" />
+                        </div>
+
+
+                        <div class="gallery__img__wrapper">
+                            <img src="/img/skater.jpg" data-tags="Skater" alt="Skater Skateboard Skatepark" />
+                        </div>
+
+
+                        <div class="gallery__img__wrapper">
+                            <img src="/img/sunset.jpg" data-tags="Sunset" alt="Sunset" />
+                        </div>
+
+
+                        <div class="gallery__img__wrapper">
+                            <img src="/img/surfer.jpg" data-tags="Surfer" alt="Surfer Sun Sea Beach" />
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
 
 
 
         <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-        <script src="/Mint-javascript-search/static/js/typeahead.js"></script>
-        <script src="/Mint-javascript-search/static/js/script.js"></script>
+        <script src="/static/js/typeahead.js"></script>
+        <script src="/static/js/script.js"></script>
     </body>
 </html>
