@@ -1,0 +1,17 @@
+.page__header {
+  text-align: center;
+  margin: 25px 0;
+}
+.search__input__wrapper {
+  margin: 5px 0 0 0;
+}
+.gallery__img__wrapper {
+  width: 30%;
+  margin: 5px 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+.gallery__img__wrapper img {
+  width: 100%;
+  height: auto;
+}
