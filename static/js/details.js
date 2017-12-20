@@ -12,12 +12,12 @@ $(document).ready(function () {
 
     }
 
-    var keywords = siteData.keywords;
+    var keywords = siteData.keywords;//var for the image data
 
     for (var i = 0; i < keywords.length; i++) {
         
-        if (keywords[i].name === param('subject')) {
-            currentPage = keywords[i];
+        if (keywords[i].name === param('subject')) {//if statement that takes the current page keyword and checks if it is equal to the url parameter
+            currentPage = keywords[i];//setting the currentPage var to the page
             $('#gallery__container').append(
                 "<div class='gallery__img__wrapper'>" +
                 "<img src='/static/img/" + keywords[i].img + "' data-tags='" + keywords[i].keys + "' alt='" + keywords[i].alt + "' />" +
