@@ -3,7 +3,15 @@
 
 $(document).ready(function () {
 
-
+    var keywords = siteData.keywords;
+    
+    for (var i = 0; i < keywords.length; i++) {
+        $('#gallery__container').append(
+                "<a href='/details.html?subject=" + keywords[i].name + "' class='gallery__img__wrapper'>" +
+                "<img src='/static/img/" + keywords[i].img + "' data-tags='" + keywords[i].keys + "' alt='" + keywords[i].alt + "' />" +
+                "</a>"
+                );
+    }
 
     var $imgs = $('#gallery__container .gallery__img__wrapper img'); //get images
     var $search = $('#photo-search'); //get input element
@@ -50,8 +58,8 @@ $(document).ready(function () {
             // iterate through the pool of strings and for any string that
             // contains the substring `q`, add it to the `matches` array
             $.each(strs, function (i, str) {
-                if (substrRegex.test(str)) {
-                    matches.push(str);
+                if (substrRegex.test(str.name)) {
+                    matches.push(str.name);
                 }
             });
 
@@ -59,8 +67,7 @@ $(document).ready(function () {
         };
     };
 
-    var keywords = ['Beach', 'Sea', 'Sand', 'Coffee', 'Fantasy', 'Book', 'Girl', 'Guitarist', 'Amps', 'Moose', 'Elk', 'Canada', 'Neon', 'Sign', 'Pancake', 'Stack', 'Puffin', 'Bird', 'Road', 'Trees', 'Skater', 'Skateboard', 'Skatepark', 'Sunset', 'Surfer', 'Sun'
-    ];
+
 
     $('#keywords .typeahead').typeahead({
         hint: true,
