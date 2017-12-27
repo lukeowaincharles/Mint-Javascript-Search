@@ -39,7 +39,7 @@ Now that there is a new page, there needs to be another JS file specific to the 
  <br>
 ￼<div style="text-align:center;">![Details For Loop](/static/img/details-for-loop.png)</div>
  <br>
-Now this provides searchable images that are linked to a separate page that pulls in the correct image and information about the image.
+Now this provides searchable images that are linked to a separate page that pulls in the correct image and information about the image. As can be seen working below:
  <br>
 ￼<div style="text-align:center;">![Third screen recording](/static/img/search-screen-recording-3.gif)</div>
  <br>
